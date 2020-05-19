@@ -1,0 +1,172 @@
+/* Фон на всех страницах */
+body {
+    background-color: #f8f8f8;
+}
+
+/* Меню сайта */
+.menu li a {
+    /* цвет текста */
+    color: green;
+    /* размер шрифта */
+    font-size: 20px;
+    /* убираем декорацию текста (а именно подчёркивание) */
+    text-decoration: none;
+       
+}
+
+.menu li {
+    /*убираем точки у элементов списка*/
+    list-style-type: none;
+    /*преобразуем текст к верхнему регистру*/
+    text-transform: uppercase;
+}
+
+/*Заголовки.*/
+h2 {
+    /*цвет шрифта*/
+    color: black;
+    /*размер шрифта*/
+    font-size: 18px;
+    /*насыщенность шрифта*/
+    font-weight: 400;
+    /*цвет фона*/
+    background: #eaeaea;
+    /*центрирование строк текста*/
+    text-align: center;
+}
+
+/*Краткое описание*/
+.short_description {
+    /*цвет шрифта*/
+    color: #707070;
+    /*размер шрифта*/
+    font-size: 14px;
+    /*начертание шрифта italic*/
+    font-style: italic;
+    /*высота текста*/
+    line-height: 16px;
+}
+
+
+/*Подробное описание*/
+.detailed_description {
+    /*цвет шрифта*/
+    color: #484343;
+    /*размер шрифта*/
+    font-size: 16px;
+    /*насыщенность шрифта*/
+    font-weight: 400;
+    /*расположение текста по левому краю*/
+    text-align: left;
+    /*высота текста*/
+    line-height: 24px;
+}
+
+/*список характеристик*/
+.list {
+    /*цвет шрифта*/
+    color: #479a2e;
+    /*размер шрифта*/
+    font-size: 14px;
+    /*насыщенность шрифта*/
+    font-weight: 400;
+    /*расположение текста по левому краю*/
+    text-align: left;
+    /*высота текста*/
+    line-height: 24px;
+    /*устанавливаем изображение в качестве маркера*/
+    list-style-image: url(img/Маркер.png)
+}
+
+
+/*стиль полей ввода*/
+input[type="text"] {
+    width:  200px;
+    height: 15px;
+    padding: 5px 5px 5px 5px;
+    border:1px solid #999;
+    font-size:16px;
+    font-family: Tahoma;
+    background-color: rgba(127, 206, 255, 0.35);
+}
+
+textarea[type="text"] {
+    font-size:16px;
+    padding: 5px 5px 5px 5px;
+    border:1px solid #999;
+    font-family: Tahoma;
+    background-color: rgba(127, 206, 255, 0.35);
+}
+
+.select select {
+    border:1px solid #999;
+    font-size:16px;
+    font-family: Tahoma;
+    background-color: rgba(127, 142, 255, 0.41);
+}
+
+
+/*рамка для изображений на всех страницах*/
+.photo, .photo_catalog {
+ /*padding: 2px;*/ /* Толщина рамки */
+ /*background: green;*/  /*Цвет рамки*/ 
+ outline: 2px solid green; /* Параметры рамки */
+}
+
+
+/*исчезание рамки на странице подробного описания*/
+.photo_catalog:hover {
+    outline: none;
+}
+
+
+/*Псевдокласс: hover. Определяет стиль элемента при наведении на него курсора мыши*/
+.menu li a:hover {
+    color: rgb(0, 221, 0);
+}
+
+/*Псевдокласс :active определяет стиль для активной ссылки. Активной ссылка становится при нажатии на нее.*/
+.menu li a:active {
+    color: blue;
+}
+
+
+/*изменение цвета текста и поля при вводе в поле "E-mail"*/
+.e_mail:focus {
+    color: blue;
+    background-color: rgba(127, 206, 255, 0.84);
+}
+
+
+/* Применил только для поля "Имя", для других полей считаю нецелеобразным*/
+.capitalize {
+    text-transform: capitalize;
+}
+
+
+/*Таблица с общими характеристиками*/
+table {
+    border: 2px solid black;
+    width: 1100px;
+    height: 10px;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    text-align: center
+}
+
+
+/*каждая буква каждого параграфа имеет свой стиль*/
+p:first-letter {
+    font-family: "Times New Roman", Times, serif; /* Гарнитура шрифта первой буквы */
+    font-size: 200%; /* Размер шрифта первого символа */
+    color: green; /* Красный цвет текста */
+}
+
+footer {
+    background: #808080;
+    height: 50px;
+    vertical-align: middle;
+}
